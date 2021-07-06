@@ -1,0 +1,20 @@
+<hr class="text-white">
+<div class="container">
+    <table class="table text-white text-center table-bordered">
+        <thead>
+            <tr>
+                <th class="bg-info">Name</th>
+                <th class="bg-warning text-dark">Profile Picture</th>
+                <th class="bg-info">Average</th>
+            </tr>       
+        </thead>
+        <tbody>
+            <tr *ngFor = "let uObj of users">
+                 <td><button class="btn btn-warning btn-sm" (click) = "onSelectId(uObj.name)">{{uObj.name}}</button></td>
+                <td class="text-dark"><img src={{uObj.imageUrl}} alt=""></td>
+                <td class="text-white">{{uObj.test.bowling.BBM}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

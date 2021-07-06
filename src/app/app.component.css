@@ -1,0 +1,22 @@
+.main-heading{
+    font-family: 'Roboto', sans-serif;
+}
+.active{
+    font-weight: bold;
+   
+}
+.active:hover{
+    background-color:gray;
+}
+nav{
+    color:white;
+    background-color: crimson;
+}
+
+nav li a{
+   color:white;
+}
+
+nav li a:focus{
+    color:yellow;
+}
