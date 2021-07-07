@@ -1,0 +1,41 @@
+GET http://localhost:3000/user/getusers
+
+
+###
+GET http://localhost:3000/user/getuser/ravi
+
+###
+POST http://localhost:3000/user/createuser
+Content-Type: application/json
+
+{
+    "username":"adele",
+    "password":"loveadele90",
+    "email":"hellooutside123@gmail.com",
+    "city":"Los Angeles",
+    "age":37
+}
+
+
+
+###
+PUT http://localhost:3000/user/updateuser/ravi
+Content-Type: application/json
+
+{
+    "username":"ravi",
+    "city":"khammam"
+}
+
+###
+DELETE http://localhost:3000/user/deleteuser/
+
+
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "username":"adele",
+    "password":"loveadele90"
+}
